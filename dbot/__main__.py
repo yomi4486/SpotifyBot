@@ -240,8 +240,6 @@ async def on_message(message):
             await message.reply("VCに参加できません")
             return
         music_url = Spotify_Search(audio_name,1)
-        # 検索地域を初期化
-        locate_str = None
 
         if music_url == None:
             await message.reply(f'「{audio_name}」という曲は見つかりませんでした...\nアーティスト名などを含めてリクエストすると見つかるかもしれません！')
